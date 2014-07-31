@@ -43,7 +43,7 @@
     <script type="text/javascript" src="https://github.com/cowboy/javascript-debug/raw/master/ba-debug.min.js"></script>
     
     <spring:theme code="cas.javascript.file" var="casJavascriptFile" text="" />
-    <script type="text/javascript" src="<c:url value="${casJavascriptFile}" />"></script>
+    <script type="text/javascript" src="/js/highlights.js"></script>
   </body>
 </html>
 
