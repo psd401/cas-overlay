@@ -45,6 +45,11 @@
   <![endif]-->
 </head>
 <body>
+<%--<nav class="navbar navbar-default" role="navigation">--%>
+
+    <%--<p><a href="/logout" onclick="ga('send', 'event');">Logout</a></p>--%>
+
+
   <div class="container">
       <header>
         <%--<a id="logo" href="http://www.jasig.org" title="<spring:message code="logo.title" />">Jasig</a>--%>
