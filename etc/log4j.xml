@@ -13,7 +13,7 @@
     </appender>
 
     <appender name="cas" class="org.apache.log4j.RollingFileAppender">
-        <param name="File" value="/var/lib/tomcat7/logs/cas.log"/>
+        <param name="File" value="/Users/stephanbuys/Coding/cas-overlay/log/cas.log"/>
         <param name="MaxFileSize" value="512KB"/>
         <param name="MaxBackupIndex" value="3"/>
         <layout class="org.apache.log4j.PatternLayout">
@@ -36,7 +36,7 @@
 
     <!-- This file appender is used to output aggregated performance statistics -->
     <appender name="fileAppender" class="org.apache.log4j.FileAppender">
-        <param name="File" value="/var/lib/tomcat7/logs/perfStats.log"/>
+        <param name="File" value="/Users/stephanbuys/Coding/cas-overlay/log/perfStats.log"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%m%n"/>
         </layout>
@@ -75,6 +75,11 @@
         <appender-ref ref="cas"/>
     </logger>
 
+    <logger name="net.unicon.cas" additivity="true">
+        <level value="DEBUG"/>
+        <appender-ref ref="cas"/>
+    </logger>
+
     <logger name="com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager">
         <level value="INFO"/>
         <appender-ref ref="cas"/>
@@ -96,11 +101,6 @@
 
     <logger name="org.apache.xml">
         <level value="OFF"/>
-    </logger>
-
-    <logger name="org.ldaptive">
-        <level value="DEBUG" />
-        <appender-ref ref="cas" />
     </logger>
 
     <!--
