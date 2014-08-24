@@ -9,6 +9,6 @@ target/
 overlays/
 .gradle/
 build/
-
-
+log/
 /bin
+github-cas-overlay.*
