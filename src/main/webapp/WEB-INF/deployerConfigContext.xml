@@ -59,7 +59,7 @@
 
 <bean id="bindConnectionInitializer"
       class="org.ldaptive.BindConnectionInitializer"
-      p:bindDn="ou=Service Account\, Data Scripts,ou=Service,ou=Misc,ou=NOC,ou=PSD,dc=Peninsula,dc=wednet,dc=edu">
+      p:bindDn="serv_datascript@peninsula.wednet.edu">
     <property name="bindCredential">
         <bean class="org.ldaptive.Credential"
               c:password="Eeth8xaS" />
